@@ -34,7 +34,7 @@ def detect_and_recognize_face(image, face_cascade, model, label_encoder):
         predicted_label = model.predict(features)
         predicted_person = label_encoder.inverse_transform(predicted_label)
         cv2.rectangle(image, (x, y), (x+w, y+h), (255, 0, 0), 2)
-        cv2.putText(image, predicted_person[0], (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
+        cv2.putText(image, predicted_person[0], (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255, 0, 0), 2)
     
     return image
 
