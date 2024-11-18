@@ -1,0 +1,6 @@
+opencv-python
+streamlit
+scikit-learn
+numpy
+scipy
+Pillow
