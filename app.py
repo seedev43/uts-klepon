@@ -59,4 +59,4 @@ if uploaded_file is not None:
     result_image = detect_and_recognize_face(img, face_cascade, model, label_encoder)
 
     # Menampilkan gambar hasil deteksi dan prediksi
-    st.image(result_image, caption="Hasil Prediksi", use_column_width=True)
+    st.image(result_image, caption="Hasil Prediksi", use_container_width=True)
